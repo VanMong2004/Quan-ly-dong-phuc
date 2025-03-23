@@ -1,17 +1,15 @@
-const filterOpen = document.querySelector('.filter')
-const filterModal = document.querySelector('.filter-modal')
-const filterClose = document.querySelector('.close-modal')
 
-filterOpen.addEventListener('click', function (){
-    filterModal.classList.add('active')
-})
+function showDetailAction () {
+    const imgMain = document.querySelector('.product-img__main')
+    const imgExtra = document.querySelectorAll('.product-img__extra-item')
+    
+    imgExtra.forEach((item) => {
+        item.onclick = () => {
+            if (imgMain && item) {
+                imgMain.src = item.src
+            }
+        }
+    })
+}
 
-filterClose.addEventListener('click', function (){
-    filterModal.classList.remove('active')
-})
 
-window.addEventListener("click", function(event) {
-    if (!filterModal.contains(event.target) && event.target !== filterOpen) {
-        filterModal.classList.remove("active");
-    }
-});

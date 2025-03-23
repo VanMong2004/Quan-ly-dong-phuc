@@ -253,6 +253,10 @@ ul {
     /* overflow: auto; */
 }
 
+footer {
+    width: 100%;
+}
+
 .cart-pay {
     position: fixed;
     bottom: 0;

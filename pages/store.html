@@ -21,15 +21,14 @@
     <div class="body container-fluit p-3 mt-3">
         <!-- Search -->
         <div class="row d-flex align-items-center bg-white p-2">
-            <div class="col-9">
+            <div class="col-10">
                 <div class="search input-group">
                     <input type="text" class="form-control w-50" placeholder="Nhập từ khóa...">
                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-end">
-                <a class="btn p-3" href="cart.html"><div class="cart col-6"><i class="fa-solid fa-cart-shopping"></i></div></a>
-                <a class="btn p-3" href="profile.html"><div class="profile col-6"><i class="fa-solid fa-user"></i></div></a>
+            <div class="col-2 d-flex justify-content-end">
+                <a class="btn p-3" href="profile.html"><div class="profile"><i class="fa-solid fa-user"></i></div></a>
             </div>
         </div>
         <!-- List Menu -->
@@ -38,41 +37,6 @@
             <li class="menu-item btn col-2">Phổ biến</li>
             <li class="menu-item btn col-2">Bán chạy</li>
             <li class="menu-item btn filter col-2" data-bs-toggle="collapse" data-bs-target="#filter-modal">Lọc</li>
-            <form action="" method="" id="filter-modal" class="collapse">
-                <div class="gender d-flex mt-2" style="font-size: 1.2rem;">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                        <label class="form-check-label" for="male">Nam</label>
-                    </div>
-                    <div class="form-check" style="margin-left: 10px;">
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                        <label class="form-check-label" for="female">Nữ</label>
-                    </div>
-                </div>
-                <select class="form-select mt-2">
-                    <option selected>Loại</option>
-                    <option value="">Áo thể dục</option>
-                    <option value="">Quần thể dục</option>
-                    <option value="">Áo sơ mi</option>
-                    <option value="">Quần sơ mi</option>
-                </select>
-                <select class="form-select mt-2">
-                    <option selected>Size</option>
-                    <option value="">S</option>
-                    <option value="">M</option>
-                    <option value="">L</option>
-                    <option value="">XL</option>
-                </select>   
-               <select class="form-select mt-2">
-                    <option selected>Giá</option>
-                    <option value="">Giảm dần</option>
-                    <option value="">Tăng dần</option>
-                </select>
-                <div class="text-center mt-3">
-                    <button type="submit" class="btn btn-danger w-50">OK</button>   
-                </div>
-             </form>
-    
         </ul>
         <!-- Product -->
         <div class="product-list">
@@ -182,10 +146,10 @@
     <!-- Footer Nav -->
     <footer>
         <div class="nav d-flex justify-content-around">
-            <a href="../index.html" class="nav-item"><i class="fas fa-home"></i><span>Trang chủ</span></a>
-            <a href="#" class="nav-item"><i class="fas fa-search"></i><span>Tìm kiếm</span></a>
             <a href="#" class="nav-item"><i class="fas fa-shopping-bag"></i><span>Cửa hàng</span></a>
-            <a href="#" class="nav-item"><i class="fas fa-phone"></i><span>Liên hệ</span></a>
+            <a href="#" class="nav-item"><i class="fas fa-search"></i><span>Tìm kiếm</span></a>
+            <a href="../index.html" class="nav-item"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+            <a href="cart.html" class="nav-item"><i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span></a>
             <a href="profile.html" class="nav-item"><i class="fas fa-user"></i><span>Hồ sơ</span></a>
         </div>
     </footer>
@@ -196,7 +160,41 @@
 
 
     <!-- Modal filter -->
-        
+    <form action="" method="" id="filter-modal" class="collapse">
+        <div class="gender d-flex mt-2" style="font-size: 1.2rem;">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">Nam</label>
+            </div>
+            <div class="form-check" style="margin-left: 10px;">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">Nữ</label>
+            </div>
+        </div>
+        <select class="form-select mt-2">
+            <option selected>Loại</option>
+            <option value="">Áo thể dục</option>
+            <option value="">Quần thể dục</option>
+            <option value="">Áo sơ mi</option>
+            <option value="">Quần sơ mi</option>
+        </select>
+        <select class="form-select mt-2">
+            <option selected>Size</option>
+            <option value="">S</option>
+            <option value="">M</option>
+            <option value="">L</option>
+            <option value="">XL</option>
+        </select>   
+       <select class="form-select mt-2">
+            <option selected>Giá</option>
+            <option value="">Giảm dần</option>
+            <option value="">Tăng dần</option>
+        </select>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-danger w-50">OK</button>   
+        </div>
+     </form>
+
 
 
 

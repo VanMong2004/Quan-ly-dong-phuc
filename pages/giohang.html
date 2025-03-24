@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh toán</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -12,7 +12,7 @@
     <!-- Header -->
     <header class="header">
         <img src="../assets/img/logo3.jpg" alt="" class="logo img-fluid">
-        <div class="name-header">
+        <div class="tentruong">
             <p>TRƯỜNG ĐẠI HỌC</p><p>KỸ THUẬT - CÔNG NGHỆ CẦN THƠ</p>
             <p>MÃ TRƯỜNG: KCC</p>
         </div>
@@ -23,25 +23,24 @@
         <!-- Search -->
         <div class="row d-flex align-items-center">
             <div class="col-1">
-                <a href="store.html"><i class="back-icon fa-solid fa-chevron-left"></i></a>
+                <a href="cuahang.html"><i class="back-icon fa-solid fa-chevron-left"></i></a>
             </div>
-            <div class="col-8">
-                <div class="search input-group">
+            <div class="col-9">
+                <div class="timkiem input-group">
                     <input type="text" class="form-control w-50" placeholder="Nhập từ khóa...">
                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-end">
-                <a class="btn p-3" href="cart.html"><div class="cart col-6"><i class="fa-solid fa-cart-shopping"></i></div></a>
-                <a class="btn p-3" href="profile.html"><div class="profile col-6"><i class="fa-solid fa-user"></i></div></a>
+            <div class="col-2 d-flex justify-content-end">
+                <a class="btn p-3" href="trangcanhan.html"><div class="trangcanhan"><i class="fa-solid fa-user"></i></div></a>
             </div>
         </div>
 
-        <div class="">
-            <div class="row mt-2">
+        <div class="cart-list" style="max-height: 75vh;">
+            <div class="row g-0 mt-5">
                 <div class="cart-item border rounded p-2 mb-3 d-flex align-items-center">
                     <input type="checkbox" class="cart-item__checkbox form-check-input ms-2 me-4">
-                    <img src="../assets/img/product1.jpg" class="cart-item__img img-fluid rounded me-3">
+                    <img src="../assets/img/product3.jpg" class="cart-item__img img-fluid rounded me-3">
                     <div class="cart-item__content flex-grow-1">
                         <p class="mb-1 fw-bold">Đồng phục sinh viên</p>
                         <p class="text-danger fw-bold mb-1">69,999đ</p>
@@ -52,51 +51,20 @@
                         </div>                   
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="pay-method row mt-5">
-            <h3>Phương thức thanh toán</h3>
-            <div class="direct-pay">
-                <i class="fa-solid fa-money-check-dollar"></i> Thanh toán khi nhận hàng         
-            </div>
-            <div class="momo-pay">
-                <i class="fa-solid fa-credit-card"></i> Thanh toán qua Momo
-            </div>
-            <div class="qr-pay">
-                <button class="btnDesc btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#desc">
-                    <i class="fa-solid fa-qrcode"></i> Thanh toán qua mã QR
-                </button>
-                <div class="collapse mt-3" id="desc">
-                    <div class="card card-body">
-                        <img src="../assets/img/qr.png" alt="" class="w-md-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="detail-pay row mt-5">
-            <h3>Chi tiết thanh toán</h3>
-            <div class="item-total d-flex justify-content-between">
-                <span>Tổng tiền hàng:</span>
-                <span>120,000đ</span>
-            </div>
-            <div class="pay-total d-flex justify-content-between">
-                <span>Tổng thanh toán:</span>
-                <span>150,000đ</span>
-            </div>
+            </div>        
         </div>
     </div>
 
 
     <!-- Footer Nav -->
     <footer>
-        <div class="cart-pay row p-3 mx-2">
+        <div class="thanhtoan-footer row g-0 p-3">
            <div class="form-group col-2 d-flex align-items-center">
             <input type="checkbox" class="form-check me-1">
             <label for="" style="font-size: 1rem;">Tất cả</label>
            </div>
-           <div class="cart-pay__total col-6">Tổng thanh toán (<span class="count">1</span>sản phẩm): </div> 
-           <button class="btn btn-danger col-4" style="font-size: 1.3rem;">Thanh toán</button>
+           <div class="tongthanhtoan-footer col-6">Tổng thanh toán (<span class="count">1</span>sản phẩm): </div> 
+           <a href="thanhtoan.html" class="btn btn-danger col-4" style="padding: 10px 2px; font-size: 1.3rem;">Mua hàng</a>
         </div>
     </footer>
 

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #f3f3f3;
+    background: #f8f8f8;
 }
 
 :root {
@@ -34,7 +34,7 @@ ul {
     width: 100%;
 }
 
-.tentruong {
+.name-header {
     position: absolute;
     top: 5px;
     left: 75px;
@@ -55,20 +55,20 @@ ul {
     object-fit: contain;
 }
 
-.tieude h5{
+.title h5{
     font-size: 1.7rem;
     margin-bottom: 0;
     color: var(--primary-color);
 }
 
-.tieude h6{
+.title h6{
     line-height: 20px;
     font-size: 1.1rem;
     color: var(--primary-color);
 }
 
-.dexuat,
-.dexuat a {
+.suggest,
+.suggest a {
     color: var(--gray-color);
     text-decoration: none;
     font-size: 1.4rem;
@@ -104,7 +104,7 @@ ul {
     font-size: 1.5rem;
 }
 
-.dathang {
+.order {
     font-size: 1.3rem;
 }
 
@@ -155,12 +155,12 @@ ul {
 
 
 /* Store */
-.timkiem {
+.search {
     height: 32px;
 }
 
-.giohang,
-.trangcanhan {
+.cart,
+.profile {
     font-size: 1.6rem;
     color: #424350;
 }
@@ -180,46 +180,51 @@ ul {
 
 }
 
-.chitiet-sanpham {
+.product-detail {
     padding: 5px;
 }
 
-.thongtin-sanpham h1 {
+.product-info h1 {
     font-size: 2.5rem;
 }
 
-.thongtin-sanpham label {
+.product-info label {
     font-size: 1.4rem;
 }
 
-.loaisanpham {
+.product-info__cate {
     margin-right: 20px;
 }
 
-.gia {
+.product-info__price {
     font-size: 3rem;
 }
 
-.size {
+.product-info__size {
     height: 30px;
     width: 50%;
     font-size: 1.4rem;
 }
 
-.noidung-danhgia {
+.btnDesc {
+    font-size: 1.2rem;
+    padding: 4px 20px;
+}
+
+.product-rating__content {
     border: 2px #e0e0e0 solid;
     padding: 10px;
     font-size: 1.4rem;
 }
 
-.ds-tuongtac {
+.action-list {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-.tuongtac-item {
+.action-item {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -229,14 +234,18 @@ ul {
     font-size: 1.6rem;
 }
 
-.tuongtac-item.addCart {
+.action-item.addCart {
     border-left: 2px solid white;
     border-right: 2px solid white;
 }
 
-.tuongtac-item img {
+.cart-item img {
     width: 70px; 
     height: auto;
+}
+
+.cart-item__content {
+    font-size: 1.4rem;
 }
 
 /* Cart */
@@ -244,11 +253,7 @@ ul {
     /* overflow: auto; */
 }
 
-footer {
-    width: 100%;
-}
-
-.thanhtoan {
+.cart-pay {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -257,47 +262,36 @@ footer {
     background: white;
 }
 
-.tongthantoan-footer {
+.cart-pay__total {
     align-self: center;
 }
 
-.thanhtoan button {
+.cart-pay button {
     padding: 10px 2px;
 }
 
 /* Pay Method */
 
-.chitietthanhtoan,
-.phuongthucthanhtoan {
+.detail-pay,
+.pay-method {
     padding: 10px;
     font-size: 1.4rem;
     border: 2px #bbbbbb solid;
 }
 
 
-.thanhtoan-momo,
-.thanhtoan-tructiep {
+.momo-pay,
+.direct-pay {
     padding: 8px 16px;
     border-bottom: 1px #ccc solid;
 }
 
-.thanhtoan-qr {
+.qr-pay {
     padding: 8px 16px;
 }
 
-.tongthanhtoan {
+.pay-total {
     padding: 8px 16px;
-}
-
-.thanhtoan-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    background: white;
 }
 
 /* Profile */
@@ -306,15 +300,15 @@ footer {
     border-bottom: 2px #414141 solid;
 }
 
-.thongtin-user img {
+.user-info img {
     width: 130px;
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.thongtin-user h3,
-.thongtin-user p {
+.user-info h3,
+.user-info p {
     margin-bottom: 0;
 }
 

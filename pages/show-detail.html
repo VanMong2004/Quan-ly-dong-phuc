@@ -10,48 +10,48 @@
 </head>
 <body>
     <!-- Body -->
-    <div class="body container-fluit p-3 mt-2 bg-white">
+    <div class="body container-fluit p-3 bg-white">
         <!-- Search -->
         <div class="row d-flex align-items-center">
             <div class="col-1">
-                <a href="cuahang.html"><i class="back-icon fa-solid fa-chevron-left"></i></a>
+                <a href="store.html"><i class="back-icon fa-solid fa-chevron-left"></i></a>
             </div>
             <div class="col-8">
-                <div class="timkiem input-group">
+                <div class="search input-group">
                     <input type="text" class="form-control w-50" placeholder="Nhập từ khóa...">
                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
             </div>
             <div class="col-3 d-flex justify-content-end">
-                <a class="btn p-3" href="giohang.html"><div class="giohang col-6"><i class="fa-solid fa-cart-shopping"></i></div></a>
-                <a class="btn p-3" href="trangcanhan.html"><div class="trangcanhan col-6"><i class="fa-solid fa-user"></i></div></a>
+                <a class="btn p-3" href="cart.html"><div class="cart col-6"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                <a class="btn p-3" href="profile.html"><div class="profile col-6"><i class="fa-solid fa-user"></i></div></a>
             </div>
         </div>
 
         <!-- Product-Detail -->
-        <div class="chitiet-sanpham row mt-4">
+        <div class="product-detail row mt-4">
             <div class=" product-img col-12">
                 <div class="row">
-                    <img src="../assets/img/product1.jpg" alt="" class="sanphamlon-img img-fluid">
+                    <img src="../assets/img/product1.jpg" alt="" class="product-img__main img-fluid">
                 </div>
-                <div class="sanphamnho-img row mt-3 flex-nowrap overflow-auto">
-                    <img src="../assets/img/product1.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
-                    <img src="../assets/img/product2.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
-                    <img src="../assets/img/product3.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
-                    <img src="../assets/img/product1.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
-                    <img src="../assets/img/product2.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
-                    <img src="../assets/img/product3.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
-                    <img src="../assets/img/product1.jpg" alt="" class="sanphamnho-img-item img-fluid col-3">
+                <div class="product-img__extra row mt-3 flex-nowrap overflow-auto">
+                    <img src="../assets/img/product1.jpg" alt="" class="product-img__extra-item img-fluid col-3">
+                    <img src="../assets/img/product2.jpg" alt="" class="product-img__extra-item img-fluid col-3">
+                    <img src="../assets/img/product3.jpg" alt="" class="product-img__extra-item img-fluid col-3">
+                    <img src="../assets/img/product1.jpg" alt="" class="product-img__extra-item img-fluid col-3">
+                    <img src="../assets/img/product2.jpg" alt="" class="product-img__extra-item img-fluid col-3">
+                    <img src="../assets/img/product3.jpg" alt="" class="product-img__extra-item img-fluid col-3">
+                    <img src="../assets/img/product1.jpg" alt="" class="product-img__extra-item img-fluid col-3">
                 </div>
             </div>
-            <div class="thongtin-sanpham col-12 d-flex flex-column mt-4">
+            <div class="product-info col-12 d-flex flex-column mt-4">
                 <h1>Đồng phục sinh viên</h1>
                 <div class="d-flex">
-                    <label>Loại: <span class="loaisanpham fw-bold">Áo sơ mi</span></label>
-                    <label>Tồn kho: <span class="kho">98</span></label>
+                    <label>Loại: <span class="product-info__cate fw-bold">Áo sơ mi</span></label>
+                    <label>Tồn kho: <span class="product-info__stock">98</span></label>
                 </div>
-                <span class="gia fw-bold">69,999đ</span>
-                <select class="size form-select mt-2 w-25">
+                <span class="product-info__price fw-bold">69,999đ</span>
+                <select class="product-info__size form-select mt-2 w-25">
                     <option selected>Size</option>
                     <option value="">S</option>
                     <option value="">M</option>
@@ -60,14 +60,14 @@
                 </select> 
                 <div class="input-group mb-3 mt-4 w-25">
                     <button class="btn btn-outline-secondary" type="button" onclick="">−</button>
-                    <input type="number" class="form-control text-center" id="soluong" value="1" min="1" max="100">
+                    <input type="number" class="form-control text-center" id="product-quantity" value="1" min="1" max="100">
                     <button class="btn btn-outline-secondary" type="button" onclick="">+</button>
                 </div>
             </div>
             <!-- Description -->
-            <div class="mota-sanpham col-12 mt-4">
+            <div class="product-desc col-12 mt-4">
                 <h2>Mô tả sản phẩm</h2>
-                <div class="mt-3" id="mota">
+                <div class="mt-3" id="desc">
                     <div class="card card-body" style="font-size: 1.4rem;">
                         <p> Tên sản phẩm: Áo đồng phục trường CTUET</p>
                         <p>🏫 Dành cho: Học sinh/Sinh viên CTUET</p>
@@ -99,10 +99,10 @@
                 </div>
             </div>
             <!-- Rating -->
-            <div class="danhgia col-12 mt-4">
+            <div class="product-rating col-12 mt-4">
                 <h1>Đánh giá sản phẩm</h1>
-                <div class="noidung-danhgia mt-3">
-                    <div class="ngoisao-icon">
+                <div class="product-rating__content mt-3">
+                    <div class="stars">
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
@@ -111,9 +111,9 @@
                     </div>
                     <div class="mt-3">
                         <h3>Tên: </h3>
-                        <p>Nội dung đánh giá: <span class="noidung"></span> </p>
+                        <p>Nội dung đánh giá </p>
 
-                        <div class="user-danhgia d-flex align-items-center">
+                        <div class="user-rate d-flex align-items-center">
                             <img src="../assets/img/product2.jpg" alt="" class="rounded-circle me-2" style="width: 30px; height: 30px; object-fit: contain;">
                             <div class="row">
                                 <span><b>Tên khách hàng</b></span>
@@ -131,10 +131,10 @@
 
     <!-- Footer Nav -->
     <footer>
-        <div class="ds-tuongtac row">
-            <a href="#" class="tuongtac-item col-3 btn btn-info"><i class="fa-brands fa-rocketchat me-1"></i><span>Chat</span></a>
-            <a href="#" class="tuongtac-item addCart col-4 btn btn-info"><i class="fa-solid fa-cart-plus me-1"></i><span>Thêm giỏ hàng</span></a>
-            <a href="thanhtoan.html" class="tuongtac-item col-5 btn btn-danger"><span>Mua ngay</span></a>
+        <div class="action-list row g-0">
+            <a href="#" class="action-item col-3 btn btn-info"><i class="fa-brands fa-rocketchat me-1"></i><span>Chat</span></a>
+            <a href="cart.html" class="action-item addCart col-4 btn btn-info"><i class="fa-solid fa-cart-plus me-1"></i><span>Thêm giỏ hàng</span></a>
+            <a href="payment.html" class="action-item col-5 btn btn-danger"><span>Mua ngay</span></a>
         </div>
     </footer>
 

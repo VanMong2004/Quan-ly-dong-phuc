@@ -12,24 +12,24 @@
     <!-- Header -->
     <header class="header">
         <img src="../assets/img/logo3.jpg" alt="" class="logo img-fluid">
-        <div class="tentruong">
+        <div class="name-header">
             <p>TRƯỜNG ĐẠI HỌC</p><p>KỸ THUẬT - CÔNG NGHỆ CẦN THƠ</p>
             <p>MÃ TRƯỜNG: KCC</p>
         </div>
     </header>
     <!-- Body -->
-    <div class="body container-fluit p-3 mt-1">
+    <div class="body container-fluit p-3">
         <!-- Search -->
         <div class="row d-flex align-items-center bg-white p-2">
             <div class="col-9">
-                <div class="timkiem input-group">
+                <div class="search input-group">
                     <input type="text" class="form-control w-50" placeholder="Nhập từ khóa...">
                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
             </div>
             <div class="col-3 d-flex justify-content-end">
-                <a class="btn p-3" href="giohang.html"><div class="giohang col-6"><i class="fa-solid fa-cart-shopping"></i></div></a>
-                <a class="btn p-3" href="trangcanhan.html"><div class="trangcanhan col-6"><i class="fa-solid fa-user"></i></div></a>
+                <a class="btn p-3" href="cart.html"><div class="cart col-6"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                <a class="btn p-3" href="profile.html"><div class="profile col-6"><i class="fa-solid fa-user"></i></div></a>
             </div>
         </div>
         <!-- List Menu -->
@@ -37,16 +37,16 @@
             <li class="menu-item btn col-2">Mới nhất</li>
             <li class="menu-item btn col-2">Phổ biến</li>
             <li class="menu-item btn col-2">Bán chạy</li>
-            <li class="menu-item btn loc-timkiem col-2" data-bs-toggle="collapse" data-bs-target="#modal-loc">Lọc</li>
+            <li class="menu-item btn filter col-2" data-bs-toggle="collapse" data-bs-target="#filter-modal">Lọc</li>
                 <!-- Modal filter -->
-                <form action="" method="" id="modal-loc" class="collapse">
-                    <div class="gioitinh d-flex mt-2" style="font-size: 1.2rem;">
+                <form action="" method="" id="filter-modal" class="collapse">
+                    <div class="gender d-flex mt-2" style="font-size: 1.2rem;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="nam" value="nam">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
                             <label class="form-check-label" for="male">Nam</label>
                         </div>
                         <div class="form-check" style="margin-left: 10px;">
-                            <input class="form-check-input" type="radio" name="gender" id="nu" value="nu">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
                             <label class="form-check-label" for="female">Nữ</label>
                         </div>
                     </div>
@@ -75,17 +75,17 @@
                 </form>
         </ul>
         <!-- Product -->
-        <div class="ds-sanpham">
+        <div class="product-list">
             <div class="row">
                 <div class="col-6 mt-2">
-                    <a href="xemchitiet.html" class="text-decoration-none text-dark">
+                    <a href="show-detail.html" class="text-decoration-none text-dark">
                         <div class="card">
-                            <img src="../assets/img/product3.jpg" class="card-img" alt="...">
+                            <img src="../assets/img/product3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Đồng phục sinh viên</h5>
                               <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                               <div class="text-center">
-                                <a href="giohang.html" class="dathang text-white btn btn-primary card-link mt-3"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                                <a href="cart.html" class="order text-white btn btn-primary card-link mt-3"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                               </div>
                             </div>
                         </div>
@@ -93,84 +93,84 @@
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product1.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product2.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product3.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product1.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product2.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product3.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 mt-2">
                     <div class="card">
-                        <img src="../assets/img/product2.jpg" class="card-img" alt="...">
+                        <img src="../assets/img/product2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Đồng phục sinh viên</h5>
                         <p class="card-text">Trẻ trung, năng động và tràn đầy nằng lượng</p>
                         <div class="text-center">
-                            <a href="#" class="dathang text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
+                            <a href="#" class="order text-white btn btn-primary card-link"><i class="fa-solid fa-gift me-1"></i> Đặt hàng</a>
                         </div>
                         </div>
                     </div>
@@ -183,10 +183,10 @@
     <footer>
         <div class="nav d-flex justify-content-around">
             <a href="#" class="nav-item"><i class="fas fa-shopping-bag"></i><span>Cửa hàng</span></a>
-            <a href="#" class="nav-item"><i class="fas fa-search"></i><span>Tìm kiếm</span></a>
-            <a href="../trangchu.html" class="nav-item"><i class="fas fa-home"></i><span>Trang chủ</span></a>
-            <a href="giohang.html" class="nav-item"><i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span></a>
-            <a href="trangcanhan.html" class="nav-item"><i class="fas fa-user"></i><span>Hồ sơ</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-comment"></i><span>Chat</span></a>
+            <a href="../index.html" class="nav-item"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+            <a href="cart.html" class="nav-item"><i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span></a>
+            <a href="profile.html" class="nav-item"><i class="fas fa-user"></i><span>Hồ sơ</span></a>
         </div>
     </footer>
 

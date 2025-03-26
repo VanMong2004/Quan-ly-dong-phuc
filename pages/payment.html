@@ -23,9 +23,9 @@
     <!-- Body -->
     <div class="body container p-3 mt-2 bg-white">
         <!-- Search -->
-        <div class="row d-flex align-items-center">
+        <div class="nav-search-pay row d-flex align-items-center">
             <div class="col-1 text-center py-3">
-                <a href="store.html"><i class="back-icon fa-solid fa-chevron-left"></i></a>
+                <a href="store.html" class=" text-decoration-none"><i class="back-icon fa-solid fa-chevron-left p-3 d-block"></i></a>
             </div>
             <div class="col-8">
                 <div class="search input-group">
@@ -59,19 +59,145 @@
 
         <div class="pay-method row mt-5 g-0">
             <h3>Phương thức thanh toán</h3>
-            <div class="direct-pay">
-                <i class="fa-solid fa-money-check-dollar"></i> Thanh toán khi nhận hàng         
+            <!-- Direct PAY -->
+            <div class="direct-pay d-flex justify-content-between">
+                <label for="saveDirectPay" class="form-label"><i class="fa-solid fa-money-check-dollar"></i> Thanh toán khi nhận hàng</label>         
+                <input type="checkbox" class="form-check-input border-success" id="saveDirectPay">
             </div>
+            <!-- MoMo PAY -->
             <div class="momo-pay">
-                <i class="fa-solid fa-credit-card"></i> Thanh toán qua Momo
-            </div>
-            <div class="qr-pay">
-                <button class="btnDesc btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#desc">
-                    <i class="fa-solid fa-qrcode"></i> Thanh toán qua mã QR
+                <button class="btnDesc btn btn-outline-dark p-2" type="button" data-bs-toggle="collapse" data-bs-target="#momo">
+                    <i class="fa-solid fa-credit-card"></i> Thanh toán qua Momo
                 </button>
-                <div class="collapse mt-3" id="desc">
+                <div class="collapse mt-3" id="momo">
+                    <div class="card card-body m-auto">
+                        <div class="momo-card">
+                            <div class="card-header momo-header py-3">
+                                <div class="d-flex align-items-center">
+                                    <h4 class="mb-0">Thanh toán bằng MoMo</h4>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <form id="momoPaymentForm">
+                                    <div class="mb-3">
+                                        <label for="phoneNumber" class="form-label">Số điện thoại MoMo</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">+84</span>
+                                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="amount" class="form-label">Số tiền (VND)</label>
+                                        <input type="number" class="form-control" id="amount" placeholder="Nhập số tiền" required>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Nội dung thanh toán</label>
+                                        <input type="text" class="form-control" id="message" placeholder="Nội dung chuyển tiền" required>
+                                    </div>
+                                    
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="saveInfo">
+                                        <label class="form-check-label" for="saveInfo">Lưu thông tin thanh toán</label>
+                                    </div>
+                                    
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn momo-btn py-2">
+                                            <i class="bi bi-wallet2 me-2"></i> Thanh toán ngay
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bank PAY -->
+            <div class="bank-pay">
+                <button class="btnDesc btn btn-outline-dark p-2" type="button" data-bs-toggle="collapse" data-bs-target="#bank">
+                    <i class="fa-solid fa-qrcode"></i> Thanh toán qua ngân hàng
+                </button>
+                <div class="collapse mt-3" id="bank">
                     <div class="card card-body">
-                        <img src="../assets/img/qr.png" alt="" class="w-md-100">
+                        <div class="bank-card">
+                            <div class="card-header bank-header py-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-bank fs-4 me-2"></i>
+                                    <h4 class="mb-0">Thanh toán qua ngân hàng</h4>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <form id="bankPaymentForm">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="bankName" class="form-label">Ngân hàng</label>
+                                            <select class="form-select" id="bankName" required>
+                                                <option value="" selected disabled>Chọn ngân hàng</option>
+                                                <option value="VCB">Vietcombank</option>
+                                                <option value="BIDV">BIDV</option>
+                                                <option value="VIB">VIB</option>
+                                                <option value="TCB">Techcombank</option>
+                                                <option value="MB">MB Bank</option>
+                                                <option value="ACB">ACB</option>
+                                                <option value="VPB">VPBank</option>
+                                                <option value="SCB">SCB</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-6 mb-3">
+                                            <label for="accountNumber" class="form-label">Số tài khoản</label>
+                                            <input type="text" class="form-control" id="accountNumber" placeholder="Nhập số tài khoản" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="accountName" class="form-label">Tên chủ tài khoản</label>
+                                        <input type="text" class="form-control" id="accountName" placeholder="Tên chủ tài khoản" readonly>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="amount" class="form-label">Số tiền (VND)</label>
+                                            <input type="number" class="form-control" id="amount" placeholder="Nhập số tiền" required>
+                                        </div>
+                                        
+                                        <div class="col-md-6 mb-3">
+                                            <label for="feeType" class="form-label">Phí thanh toán</label>
+                                            <select class="form-select" id="feeType">
+                                                <option value="sender">Người gửi chịu phí</option>
+                                                <option value="receiver">Người nhận chịu phí</option>
+                                                <option value="shared">Chia đôi phí</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Nội dung thanh toán</label>
+                                        <input type="text" class="form-control" id="message" placeholder="Nội dung chuyển tiền" required>
+                                    </div>
+                                    
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="saveInfo">
+                                        <label class="form-check-label" for="saveInfo">Lưu thông tin thanh toán</label>
+                                    </div>
+                                    
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn bank-btn py-2">
+                                            <i class="bi bi-arrow-right-circle me-2"></i> Xác nhận thanh toán
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer bg-white text-center py-3">
+                                <p class="mb-0 text-muted">Giao dịch được bảo mật bởi hệ thống ngân hàng</p>
+                                <div class="mt-2">
+                                    <img src="" alt="Vietcombank" class="bank-logo me-2">
+                                    <img src="https://www.bidv.com.vn/portalserver/content/staticContent/bidv/portal/images/logo.png" alt="BIDV" class="bank-logo me-2">
+                                    <img src="https://www.vib.com.vn/images/logo.png" alt="VIB" class="bank-logo">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

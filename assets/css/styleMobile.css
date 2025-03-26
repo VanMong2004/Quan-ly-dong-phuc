@@ -102,7 +102,7 @@ ul {
 }
 
 .card-text {
-  height: 20px;
+  height: 25px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -321,16 +321,74 @@ ul {
 
 .momo-pay,
 .direct-pay {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-bottom: 1px #ccc solid;
 }
 
-.qr-pay {
-  padding: 8px 16px;
+.bank-pay {
+  padding: 10px 16px;
 }
 
 .pay-total {
   padding: 8px 16px;
+}
+
+
+.momo-header {
+  background-color: #A50064;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+.momo-btn {
+  background-color: #A50064;
+  color: white;
+}
+.momo-btn:hover {
+  background-color: #8a0054;
+  color: white;
+}
+.momo-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+.momo-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.form-control:focus {
+  border-color: #A50064;
+  box-shadow: 0 0 0 0.25rem rgba(165, 0, 100, 0.25);
+}
+
+.bank-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+.bank-header {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+.bank-btn {
+  background-color: #0d6efd;
+  color: white;
+}
+.bank-btn:hover {
+  background-color: #0b5ed7;
+  color: white;
+}
+.bank-logo {
+  height: 30px;
+  margin-right: 10px;
+}
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
 /* Profile */
@@ -368,7 +426,7 @@ ul {
 }
 
 .nav-item.active {
-  color: white;
-  background-color: #007bff; /* Bootstrap primary color */
+  color: rgb(255, 3, 3);
+  background-color: #a200ff; /* Bootstrap primary color */
   font-weight: bold;
 }

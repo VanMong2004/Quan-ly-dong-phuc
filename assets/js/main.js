@@ -13,3 +13,7 @@ function showDetailAction () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+
+})
+

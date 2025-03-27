@@ -248,7 +248,7 @@ ul {
 }
 
 .action-item {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px 8px;
@@ -271,7 +271,7 @@ ul {
 
 .addCartPC,
 .buyNowPC {
-  display: none;
+  display: none !important;
 }
 
 .cart-item img {
@@ -283,6 +283,18 @@ ul {
   font-size: 1.4rem;
 }
 
+
+.product-quantity {
+  width: 100px !important;
+}
+
+.nav-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
 /* Cart */
 .cart-list {
   /* overflow: auto; */
@@ -430,3 +442,6 @@ ul {
   background-color: #a200ff; /* Bootstrap primary color */
   font-weight: bold;
 }
+
+
+

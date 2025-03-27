@@ -139,7 +139,7 @@
 
   .addCartPC,
   .buyNowPC {
-    display: block;
+    display: block !important;
   }
 
   .action-item.addCartPC {

@@ -125,13 +125,14 @@
     height: 150px;
   }
 
-  .profile-active {
+  .tabs {
     justify-content: space-evenly !important;
   }
 
-  .profile-active div:hover {
+  .tabs div:hover {
     opacity: 0.8;
   }
+
 
   .nav-cart {
     display: none;

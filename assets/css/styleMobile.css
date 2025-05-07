@@ -423,18 +423,27 @@ ul {
   margin-bottom: 0;
 }
 
-.profile-active .icon-active {
+.tabs .icon-active {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: #2f5db3;
 }
 
-.profile-active i {
+.tabs i {
   line-height: 50px;
   font-size: 2rem;
   color: white;
   margin: 0 10px;
+}
+
+.tab--active {
+  transform: scale(1.1);
+  transition: transform ease .1s;
+}
+
+.tab--active span {
+  color: #D96C3B;
 }
 
 .nav-item.active {
